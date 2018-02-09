@@ -1,0 +1,23 @@
+.Navbar {
+    padding: 0 24px;
+    display: flex;
+    height: 56px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.spacer {
+    flex: 1 1 100%;
+}
+
+
+.Navbar .menu {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Navbar .brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+

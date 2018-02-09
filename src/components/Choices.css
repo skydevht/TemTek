@@ -1,0 +1,12 @@
+.Choices .choice {
+    position: relative;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.Choices .choice .icon-check_circle {
+    position: absolute;
+    right: 12px;
+}
