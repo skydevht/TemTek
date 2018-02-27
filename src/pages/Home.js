@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 class Home extends Component {
@@ -21,7 +22,7 @@ class Home extends Component {
         </div>
         <nav>
           <ul>
-            <li><a>Glosè</a></li>
+            <li><Link to="/glossary">Glosè</Link></li>
             <li><a>Enfo</a></li>
             <li><a>Skydev</a></li>
             <li><a>Experts Online</a></li>
