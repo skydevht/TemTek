@@ -1,0 +1,37 @@
+.page {
+    padding: 40px;
+}
+
+.page-title {
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    max-width: 800px;
+    margin: 24px auto 0;
+    padding: 20px;
+    border-radius: 4px;;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #555;
+}
+
+.term-row {
+    padding: 4px;
+}
+
+.term {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.term span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+}
