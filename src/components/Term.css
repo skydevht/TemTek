@@ -1,0 +1,45 @@
+.term-row {
+    padding: 0px;
+    cursor: pointer;
+    border-bottom: solid 1px #eee;
+}
+
+.term-row:last-child {
+    border-bottom: none;
+}
+
+.term {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.term span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+}
+
+.content {
+    padding: 20px;
+    background: #fafafa;
+    margin: 0;
+    overflow: hidden;
+    transition: height 2s ease-in-out;
+}
+
+.content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.opened {
+    height: auto;
+}
+
+.closed {
+    padding: 0;
+    height: 0;
+}
+

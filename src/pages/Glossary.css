@@ -7,31 +7,32 @@
     color: #333;
 }
 
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.navigation li {
+    font-size: 16px;
+    margin: 0;
+    margin-left: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
 .section {
     max-width: 800px;
     margin: 24px auto 0;
-    padding: 20px;
+    padding: 10px 0;
     border-radius: 4px;;
     background-color: #fff;
 }
 
 .section-title {
+    text-align: center;
     font-size: 24px;
-    color: #555;
-}
-
-.term-row {
-    padding: 4px;
-}
-
-.term {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.term span {
-    font-size: 16px;
-    font-weight: 400;
     color: #555;
 }

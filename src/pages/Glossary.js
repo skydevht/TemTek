@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar';
+import Term from '../components/Term';
 import './Glossary.css';
 
 
@@ -19,6 +20,36 @@ const terms = [
   },
 ];
 
+const index = [
+  'Tout',
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z',
+]
+
 class Glossary extends React.Component {
 
   render() {
@@ -27,12 +58,17 @@ class Glossary extends React.Component {
         <Navbar />
         <div className="page">
           <h1 className="page-title">Glosè</h1>
+          <ul className="navigation">
+            {
+              index.map((c, idx) => (
+                <li key={idx} >{c}</li>
+              ))
+            }
+          </ul>
           <section className="section">
             <h3 className="section-title">A</h3>
             { terms.map((term, idx) => (
-              <div className="term-row" key={idx}>
-                <h5 className="term">{ term.term } <span>{term.trans}</span></h5>
-              </div>
+              <Term key={idx} term={term} />
             ))
             }
           </section>
