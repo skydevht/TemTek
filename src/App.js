@@ -4,6 +4,10 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
+import rootReducer from './redux/reducers';
 import Main from './pages/Main';
 import Home from './pages/Home';
 import Glossary from './pages/Glossary';
@@ -23,4 +27,16 @@ class App extends Component {
   }
 }
 
-export default App;
+const store = createStore(
+  rootReducer,
+  applyMiddleware(thunkMiddleware),
+);
+
+
+const AppWithState = props => (
+ <Provider store={ store }>
+   <App />
+ </Provider>
+);
+
+export default AppWithState;

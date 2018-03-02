@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Navbar from '../components/Navbar';
 import Choices from '../components/Choices';
 import './Main.css';
@@ -30,7 +31,7 @@ class Main extends Component {
               </div>
               <Choices data={choice} />
               <form className="new-term">
-                <input type="text"  placeholder="Ajoute yon lòt tradisksyon"/>
+                <input type="text" placeholder="Ajoute yon lòt tradisksyon"/>
                 <button className="add-term icon-check"></button>
               </form>
               <button className="submit btn btn--color btn--size-l">Anrejistre</button>
@@ -42,4 +43,8 @@ class Main extends Component {
   }
 }
 
-export default Main;
+const mapStateToProps = state => ({
+  term: state.app.term,
+});
+
+export default connect(mapStateToProps)(Main);
